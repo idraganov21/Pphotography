@@ -2634,7 +2634,7 @@ h6 {
 }
 
 .max-h-\[65px\] {
-  max-height: 65px;
+  max-height: 210px;
 }
 
 .min-h-\[100vh\] {
@@ -2722,7 +2722,7 @@ h6 {
 }
 
 .max-w-\[110px\] {
-  max-width: 110px;
+  max-width: 250px;
 }
 
 .max-w-\[65\%\] {

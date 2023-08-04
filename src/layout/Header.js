@@ -26,8 +26,8 @@ const Header = () => {
             {/* You can use text or image as logo. data-type values are: "image" and "text"  */}
             <a className="image" href="#">
               <img
-                className="max-w-[100px] max-h-[40px]"
-                src="assets/img/logo/dark.png"
+                className="max-w-[250px] max-h-[210px]"
+                src="assets/img/svg/polisvg.svg"
                 alt="image"
               />
             </a>
@@ -35,7 +35,7 @@ const Header = () => {
               className="text text-black uppercase font-poppins text-[22px] font-extrabold tracking-[2px] leading-[50px]"
               href="#"
             >
-              <span>Cavani</span>
+              <span>Polina</span>
             </a>
           </div>
           <div className="trigger relative top-[5px]">
@@ -150,7 +150,7 @@ const Header = () => {
           <a className="image" href="#">
             <img
               className="max-w-[110px] max-h-[65px] inline-block"
-              src="assets/img/logo/dark.png"
+              src="assets/img/svg/polisvg.svg"
               alt="image"
             />
           </a>
@@ -158,7 +158,7 @@ const Header = () => {
             className="text no-underline text-black uppercase font-poppins text-[25px] font-extrabold tracking-[2px] leading-[70px]"
             href="#"
           >
-            <span className="relative top-[2px]">Cavani</span>
+            <span className="relative top-[2px]">Polina</span>
           </a>
         </div>
         <div className="menu relative">
