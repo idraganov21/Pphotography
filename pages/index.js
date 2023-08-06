@@ -37,7 +37,7 @@ const Index = () => {
           <Service />
           {/* SERVICE */}
           {/* NEWS */}
-          <News />
+          {/* <News /> */}
           {/* NEWS */}
           {/* CONTACT */}
           <Contact />
