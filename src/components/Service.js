@@ -10,82 +10,49 @@ const Service = () => {
 
   const services = [
     {
-      img: "assets/img/news/1.jpg",
-      icon: "assets/img/svg/3d.svg",
-      text: "Developing website involves creating your website, making it one of the most vital parts of your marketing",
-      date: "August 9, 2021",
-      title: "3D Animation",
+      img: "assets/img/svg/camera.svg",
+      icon: "assets/img/svg/camera.svg",
+      text: "Получавате всички сполучливи кадри, селектирани и обработени от мен. Предадени в онлайн галерия",
+      title: "Сватбена фотография",
       text1:
-        "Cavani is a leading web design agency with an award-winning design team that creates innovative, effective websites that capture your brand, improve your conversion rates, and maximize your revenue to help grow your business and achieve your goals.",
+        "Получавате всички сполучливи кадри, селектирани и обработени от мен. Предадени в онлайн галерия",
       text2:
-        "In today's digital world, your website is the first interaction consumers have with your business. That's why almost 95 percent of a user's first impression relates to web design. It's also why web design services can have an immense impact on your company's bottom line.",
+        "Aнгажираност - 8 часа.",
       text3:
-        "That's why more companies are not only reevaluating their website's design but also partnering with Kura, the web design agency that's driven more than $2.4 billion in revenue for its clients. With over 50 web design awards under our belt, we're confident we can design a custom website that drives sales for your unique business.",
+        "При желание за повече часове се заплаща овъртайм по 80лв/ час -при ангажираност извън гр. Варна - 0,50лв/км",
     },
     {
-      img: "assets/img/news/2.jpg",
-      icon: "assets/img/svg/play.svg",
-      text: "Developing website involves creating your website, making it one of the most vital parts of your marketing",
+      img: "assets/img/svg/camera2.svg",
+      icon: "assets/img/svg/camera2.svg",
+      text: "Получавате всичи сполучливи кадри в онлайн галерия - неограничен брой/над 100 кадъра/",
       date: "August 9, 2021",
-      title: "Explainer Videos",
+      title: "Семейна сесия",
       text1:
-        "Cavani is a leading web design agency with an award-winning design team that creates innovative, effective websites that capture your brand, improve your conversion rates, and maximize your revenue to help grow your business and achieve your goals.",
+        "Получавате всичи сполучливи кадри в онлайн галерия - неограничен брой/над 100 кадъра/ Селектирани и обработени от мен",
       text2:
-        "In today's digital world, your website is the first interaction consumers have with your business. That's why almost 95 percent of a user's first impression relates to web design. It's also why web design services can have an immense impact on your company's bottom line.",
-      text3:
-        "That's why more companies are not only reevaluating their website's design but also partnering with Kura, the web design agency that's driven more than $2.4 billion in revenue for its clients. With over 50 web design awards under our belt, we're confident we can design a custom website that drives sales for your unique business.",
+        "110 лв Времетраене - 60 МИН.",
     },
     {
-      img: "assets/img/news/3.jpg",
-      icon: "assets/img/svg/character.svg",
-      text: "Developing website involves creating your website, making it one of the most vital parts of your marketing",
+      img: "assets/img/svg/camera3.svg",
+      icon: "assets/img/svg/camera3.svg",
+      text: "Получавате всичи сполучливи кадри в онлайн галерия - неограничен брой/над 100 кадъра/",
       date: "August 9, 2021",
-      title: "App Development",
+      title: "Портретна сесия",
       text1:
-        "Cavani is a leading web design agency with an award-winning design team that creates innovative, effective websites that capture your brand, improve your conversion rates, and maximize your revenue to help grow your business and achieve your goals.",
+        "Получавате всичи сполучливи кадри в онлайн галерия - неограничен брой/над 100 кадъра/ Селектирани и обработени от мен.",
       text2:
-        "In today's digital world, your website is the first interaction consumers have with your business. That's why almost 95 percent of a user's first impression relates to web design. It's also why web design services can have an immense impact on your company's bottom line.",
-      text3:
-        "That's why more companies are not only reevaluating their website's design but also partnering with Kura, the web design agency that's driven more than $2.4 billion in revenue for its clients. With over 50 web design awards under our belt, we're confident we can design a custom website that drives sales for your unique business.",
+        "100 ЛВ./ ВРЕМЕТРАЕНЕ ДО 60 МИН.",
     },
     {
-      img: "assets/img/news/4.jpg",
-      icon: "assets/img/svg/edu.svg",
-      text: "Developing website involves creating your website, making it one of the most vital parts of your marketing",
+      img: "assets/img/svg/camera4.svg",
+      icon: "assets/img/svg/camera4.svg",
+      text: "Получавате всичи сполучливи кадри в онлайн галерия - неограничен брой",
       date: "August 9, 2021",
-      title: "Educational Video",
+      title: "Заснемане на ритуал Кръщение",
       text1:
-        "Cavani is a leading web design agency with an award-winning design team that creates innovative, effective websites that capture your brand, improve your conversion rates, and maximize your revenue to help grow your business and achieve your goals.",
+        "Заснемане на ритуал Кръщение!",
       text2:
-        "In today's digital world, your website is the first interaction consumers have with your business. That's why almost 95 percent of a user's first impression relates to web design. It's also why web design services can have an immense impact on your company's bottom line.",
-      text3:
-        "That's why more companies are not only reevaluating their website's design but also partnering with Kura, the web design agency that's driven more than $2.4 billion in revenue for its clients. With over 50 web design awards under our belt, we're confident we can design a custom website that drives sales for your unique business.",
-    },
-    {
-      img: "assets/img/news/5.jpg",
-      icon: "assets/img/svg/art.svg",
-      text: "Developing website involves creating your website, making it one of the most vital parts of your marketing",
-      date: "August 9, 2021",
-      title: "3D Game Art",
-      text1:
-        "Cavani is a leading web design agency with an award-winning design team that creates innovative, effective websites that capture your brand, improve your conversion rates, and maximize your revenue to help grow your business and achieve your goals.",
-      text2:
-        "In today's digital world, your website is the first interaction consumers have with your business. That's why almost 95 percent of a user's first impression relates to web design. It's also why web design services can have an immense impact on your company's bottom line.",
-      text3:
-        "That's why more companies are not only reevaluating their website's design but also partnering with Kura, the web design agency that's driven more than $2.4 billion in revenue for its clients. With over 50 web design awards under our belt, we're confident we can design a custom website that drives sales for your unique business.",
-    },
-    {
-      img: "assets/img/news/6.jpg",
-      icon: "assets/img/svg/presentation.svg",
-      text: "Developing website involves creating your website, making it one of the most vital parts of your marketing",
-      date: "August 9, 2021",
-      title: "Presentations",
-      text1:
-        "Cavani is a leading web design agency with an award-winning design team that creates innovative, effective websites that capture your brand, improve your conversion rates, and maximize your revenue to help grow your business and achieve your goals.",
-      text2:
-        "In today's digital world, your website is the first interaction consumers have with your business. That's why almost 95 percent of a user's first impression relates to web design. It's also why web design services can have an immense impact on your company's bottom line.",
-      text3:
-        "That's why more companies are not only reevaluating their website's design but also partnering with Kura, the web design agency that's driven more than $2.4 billion in revenue for its clients. With over 50 web design awards under our belt, we're confident we can design a custom website that drives sales for your unique business.",
+        "120 лв",
     },
   ];
 
@@ -170,6 +137,7 @@ const Service = () => {
                       data-img-url={modalContent.img}
                       style={{
                         backgroundImage: `url(${modalContent.img})`,
+                        backgroundSize: 'contain',
                       }}
                     />
                   </div>

@@ -10,6 +10,7 @@
     "tailwind-run": "tailwindcss -i ./public/src/main.css -o ./public/assets/css/main.css --watch"
   },
   "dependencies": {
+    "@headlessui/react": "^1.7.16",
     "@next/font": "13.2.4",
     "imagesloaded": "^5.0.0",
     "isotope-layout": "^3.0.6",

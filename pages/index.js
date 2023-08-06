@@ -19,8 +19,8 @@ const Index = () => {
       <div className="cavani_tm_mainpart absolute inset-[70px] overflow-hidden middle:inset-x-0 middle:bottom-0 middle:top-[55px]">
         <div className="author_image absolute top-0 left-0 bottom-0 w-[40%] z-[15]">
           <div
-            className="main absolute inset-0 bg-no-repeat bg-cover bg-center"
-            data-img-url="assets/img/about/1.jpg"
+            className="main absolute inset-0 bg-no-repeat bg-cover"
+            data-img-url="assets/img/about/poliprofilna.webp"
           />
         </div>
         <div className="main_content absolute top-0 right-0 bottom-0 w-[60%]">
@@ -37,7 +37,7 @@ const Index = () => {
           <Service />
           {/* SERVICE */}
           {/* NEWS */}
-          <News />
+          {/* <News /> */}
           {/* NEWS */}
           {/* CONTACT */}
           <Contact />

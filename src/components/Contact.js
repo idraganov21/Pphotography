@@ -18,7 +18,7 @@ const Contact = () => {
                     src="assets/img/svg/location.svg"
                     alt="image"
                   />
-                  <span className="block">Ave Street, New York, USA</span>
+                  <span className="block">Varna, Bulgaria</span>
                 </div>
               </li>
               <li className="mb-[30px] w-1/3 pl-[30px]">
@@ -33,7 +33,7 @@ const Contact = () => {
                       className="text-[#7d7789] transition-all duration-300 hover:text-[#333]"
                       href="#"
                     >
-                      hello@cavani.com
+                      poli110356@gmail.com
                     </a>
                   </span>
                 </div>
@@ -45,7 +45,7 @@ const Contact = () => {
                     src="assets/img/svg/call.svg"
                     alt="image"
                   />
-                  <span className="block">+77 022 444 05 05</span>
+                  <span className="block">+359 88 8487712</span>
                 </div>
               </li>
             </ul>
@@ -107,15 +107,13 @@ const Contact = () => {
                 <div className="mapouter">
                   <div className="gmap_canvas">
                     <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d186126.54361124095!2d27.778100640491733!3d43.20472281741597!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40a4538baaf3d7a1%3A0x5727941c71a58b7c!2sVarna!5e0!3m2!1sen!2sbg!4v1691313980675!5m2!1sen!2sbg"
                       width="100%"
                       height={355}
-                      id="gmap_canvas"
-                      src="https://maps.google.com/maps?q=2880%20Broadway,%20New%20York&t=&z=13&ie=UTF8&iwloc=&output=embed"
-                      frameBorder={0}
-                      scrolling="no"
-                      marginHeight={0}
-                      marginWidth={0}
-                    />
+                      allowfullscreen=""
+                      loading="lazy"
+                      referrerpolicy="no-referrer-when-downgrade"
+                    ></iframe>
                     <a href="https://fmovies-online.net">fmovies</a>
                     <br />
                     <style

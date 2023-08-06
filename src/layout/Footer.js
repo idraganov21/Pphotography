@@ -2,7 +2,7 @@ const Footer = () => {
   return (
     <div className="cavani_tm_footer fixed inset-x-0 bottom-0 bg-white z-[10] h-[70px] leading-[70px] flex items-center justify-between py-0 px-[70px] middle:hidden">
       <div className="copyright">
-        <p className="text-[#333] font-poppins">Copyright © 2023</p>
+      <p className="text-[#333] font-poppins">© 2023 <a href="https://innogrowth.net/" target="_blank" className="text-inno-red">InnoGrowth</a> All rights reserved.</p>
       </div>
       <div className="social">
         <ul>

@@ -66,7 +66,7 @@ const Intro = () => {
         <div className="mouse-cursor cursor-inner" />
         {/* /MAGIC CURSOR */}
         <div className="intro_copyright">
-          <p>Copyright © 2023 by Marketify</p>
+          <p>Copyright © 2023 by InnoGrowth</p>
         </div>
       </div>
       <Cursor />
