@@ -15,7 +15,7 @@ const Footer = () => {
               />
             </a>
           </li>
-          <li className="mr-[15px] inline-block">
+          {/* <li className="mr-[15px] inline-block">
             <a className="text-[#333]" href="#">
               <img
                 className="svg inline-block"
@@ -23,9 +23,9 @@ const Footer = () => {
                 alt="image"
               />
             </a>
-          </li>
+          </li> */}
           <li className="mr-[15px] inline-block">
-            <a className="text-[#333]" href="#">
+            <a className="text-[#333]" href="https://instagram.com/polinaivanovaphotos?igshid=MzRlODBiNWFlZA==" target="_blank">
               <img
                 className="svg inline-block"
                 src="assets/img/svg/social/instagram.svg"
@@ -33,7 +33,7 @@ const Footer = () => {
               />
             </a>
           </li>
-          <li className="mr-[15px] inline-block">
+          {/* <li className="mr-[15px] inline-block">
             <a className="text-[#333]" href="#">
               <img
                 className="svg inline-block"
@@ -41,8 +41,8 @@ const Footer = () => {
                 alt="image"
               />
             </a>
-          </li>
-          <li className="inline-block">
+          </li> */}
+          {/* <li className="inline-block">
             <a className="text-[#333]" href="#">
               <img
                 className="svg inline-block"
@@ -50,7 +50,7 @@ const Footer = () => {
                 alt="image"
               />
             </a>
-          </li>
+          </li> */}
         </ul>
       </div>
     </div>
