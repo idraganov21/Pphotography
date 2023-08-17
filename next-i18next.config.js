@@ -5,7 +5,7 @@ module.exports = {
   i18n: {
     defaultLocale: 'bg',
     locales: ['bg', 'en'],
-    localePath: path.resolve('./public/static/locales')
+    localePath: path.resolve('./public/locales')
   },
   fallbackLng: {
     default: ['bg'],
