@@ -7,6 +7,9 @@ const nextConfig = {
     defaultLocale: 'bg',
     localeDetection: false,
   },
+  experimental: {
+    outputFileTracing: true,
+  },
 }
 
 module.exports = nextConfig
