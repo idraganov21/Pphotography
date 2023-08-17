@@ -5,6 +5,7 @@ import Service from "@/src/components/Service";
 import Layout from "@/src/layout/Layout";
 import dynamic from "next/dynamic";
 import { useContext, useEffect } from "react";
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
 const Portfolio = dynamic(() => import("@/src/components/Portfolio"), {
   ssr: false,
@@ -49,4 +50,13 @@ const IndexWater = () => {
     </Layout>
   );
 };
+
+
+export async function getServerSideProps(context) {
+  return {
+    props: {
+      ...await serverSideTranslations(context.locale, ['common']),
+    },
+  };
+}
 export default IndexWater;

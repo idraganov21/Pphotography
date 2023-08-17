@@ -4,19 +4,27 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import { CavaniContext } from "../Context";
-
-const navs = [
-  { id: 1, name: "Home", href: "home" },
-  { id: 2, name: "About", href: "about" },
-  { id: 3, name: "Portfolio", href: "portfolio" },
-  { id: 4, name: "Service", href: "service" },
-  // { id: 5, name: "News", href: "news" },
-  { id: 6, name: "Contact", href: "contact" },
-];
+import { useRouter } from "next/router";
+import { useTranslation } from "next-i18next";
 
 const Header = () => {
   const { navChange, nav: activeNav } = useContext(CavaniContext);
   const [toggle, setToggle] = useState(false);
+  const router = useRouter();
+  const { t, i18n } = useTranslation();
+
+  const handleLanguageSwitch = () => {
+    const newLocale = router.locale === "bg" ? "en" : "bg";
+    router.push(router.pathname, router.pathname, { locale: newLocale });
+  };
+
+  const navs = [
+    { id: 1, name: t("home"), href: "home" },
+    { id: 2, name: t("about"), href: "about" },
+    { id: 3, name: t("portfolio"), href: "portfolio" },
+    { id: 4, name: t("service"), href: "service" },
+    { id: 6, name: t("contact"), href: "contact" },
+  ];
   return (
     <Fragment>
       <div className="cavani_tm_topbar fixed top-0 left-0 right-0 h-[50px] bg-white z-[15] hidden middle:block">
@@ -161,6 +169,7 @@ const Header = () => {
             <span className="relative top-[2px]">Polina</span>
           </a>
         </div>
+        {/* <button onClick={handleLanguageSwitch}>click me</button> */}
         <div className="menu relative">
           <ul className="transition_link">
             {navs.map((nav) => (
@@ -179,7 +188,20 @@ const Header = () => {
                 </a>
               </li>
             ))}
+              <div className=" float-left switch">
+                <input
+                  id="language-toggle"
+                  className="check-toggle check-toggle-round-flat"
+                  type="checkbox"
+                  checked={i18n.language === "bg"}
+                  onChange={handleLanguageSwitch}
+                />
+                <label htmlFor="language-toggle" className="leading-10"></label>
+                <span className="on">EN</span>
+                <span className="off">BG</span>
+              </div>
           </ul>
+
           <span className="ccc absolute block top-[15px] bottom-[15px] bg-[#333] z-[-1] transition-all duration-500" />
         </div>
       </div>

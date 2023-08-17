@@ -3,6 +3,7 @@ import Contact from "@/src/components/Contact";
 import Service from "@/src/components/Service";
 import Layout from "@/src/layout/Layout";
 import dynamic from "next/dynamic";
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
 const Portfolio = dynamic(() => import("@/src/components/Portfolio"), {
   ssr: false,
@@ -19,7 +20,7 @@ const Index = () => {
         <div className="author_image absolute top-0 left-0 bottom-0 w-[40%] z-[15]">
           <div
             className="main absolute inset-0 bg-no-repeat bg-cover"
-            data-img-url="assets/img/about/poliprofilna.webp"
+            // data-img-url="assets/img/about/poliprofilna.webp"
           />
         </div>
         <div className="main_content absolute top-0 right-0 bottom-0 w-[60%]">
@@ -46,4 +47,13 @@ const Index = () => {
     </Layout>
   );
 };
+
+export async function getServerSideProps(context) {
+  console.log(context.locale);
+  return {
+    props: {
+      ...await serverSideTranslations(context.locale, ['common']),
+    },
+  };
+}
 export default Index;
