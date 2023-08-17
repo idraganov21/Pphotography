@@ -869,6 +869,10 @@ h6 {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+.cSize {
+  background-size: 400% 140%;
+}
+
 .circular_progress_bar .\!number {
   position: absolute;
   top: 50%;
@@ -1446,9 +1450,9 @@ h6 {
     line-height: 60px;
   }
 
-  .cavani_tm_header .logo img {
+  /* .cavani_tm_header .logo img {
     max-width: 95px;
-  }
+  } */
 
   .cavani_tm_mainpart .author_image {
     width: 35%;
@@ -1628,10 +1632,33 @@ h6 {
 /******  Middle  *******/
 
 @media (max-width: 1040px) {
+
+  .switch {
+    margin-top: 5rem !important;
+    margin-left: 18px !important;
+  }
+
   .mouse-cursor.cavani_tm_section {
     visibility: hidden;
     z-index: 9;
     opacity: 0;
+  }
+  input.check-toggle-round-flat + label {
+    width: 60px !important;
+    height: 25px !important;
+  }
+
+  input.check-toggle-round-flat:checked + label:after {
+    margin-left: 27px !important;
+    width: 25px !important;
+  }
+
+  input.check-toggle-round-flat + label:after {
+    width: 25px !important;
+  }
+
+  .switch > span {
+    top: 3px !important;
   }
 
   .mouse-cursor {
@@ -1975,10 +2002,40 @@ h6 {
     @apply small:w-[80px] small:h-[80px];
   } */
 
+  /* @media (min-width: 700px) and (max-width: 1040px) {
+    .logo {
+      margin-right: 500px !important;
+    }
+  }
+  @media (min-width: 330px) and (max-width: 435px) {
+    .logo {
+      margin-right: 200px !important;
+    }
+  }
+  @media (min-width: 435px) and (max-width: 699px) {
+    .logo {
+      margin-right: 250px !important;
+    }
+  } */
+
+  @media (max-width: 1040px) {
+    .logo {
+      width: 200px;
+      margin-left: -40px;
+      margin-top: 10px;
+    }
+  }
+
 @media (max-width: 768px) {
   .circular_progress_bar .title {
     max-width: 80px;
   }
+
+  /* .logo {
+    margin-right: 100px;
+    padding: 0 0 0 0;
+    margin-left: -30px;
+  } */
 
   .circular_progress_bar .\!title {
     max-width: 80px;

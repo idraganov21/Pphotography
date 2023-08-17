@@ -68,10 +68,18 @@ const Header = () => {
         <div className="inner relative w-full h-full text-right px-[20px] pt-[70px] pb-[20px]">
           <div className="wrapper">
             <div className="avatar w-[70px] h-[70px] relative float-right mb-[60px]">
-              <div
-                className="image absolute inset-0 bg-no-repeat bg-cover bg-center"
-                data-img-url="assets/img/about/1.jpg"
-              />
+            <div className=" float-left switch">
+                <input
+                  id="language-toggle"
+                  className="check-toggle check-toggle-round-flat"
+                  type="checkbox"
+                  checked={i18n.language === "bg"}
+                  onChange={handleLanguageSwitch}
+                />
+                <label htmlFor="language-toggle" className="leading-10"></label>
+                <span className="on">EN</span>
+                <span className="off">BG</span>
+              </div>
             </div>
             <div className="menu_list w-full h-auto clear-both float-left mb-[50px]">
               <ul className="transition_link">
@@ -107,7 +115,7 @@ const Header = () => {
                     />
                   </a>
                 </li>
-                <li className="mr-[8px] inline-block">
+                {/* <li className="mr-[8px] inline-block">
                   <a className="text-[#333]" href="#">
                     <img
                       className="svg"
@@ -115,9 +123,9 @@ const Header = () => {
                       alt="image"
                     />
                   </a>
-                </li>
+                </li> */}
                 <li className="mr-[8px] inline-block">
-                  <a className="text-[#333]" href="#">
+                  <a className="text-[#333]" href="https://instagram.com/polinaivanovaphotos?igshid=MzRlODBiNWFlZA==" target="_blank">
                     <img
                       className="svg"
                       src="assets/img/svg/social/instagram.svg"
@@ -125,7 +133,7 @@ const Header = () => {
                     />
                   </a>
                 </li>
-                <li className="mr-[8px] inline-block">
+                {/* <li className="mr-[8px] inline-block">
                   <a className="text-[#333]" href="#">
                     <img
                       className="svg"
@@ -133,8 +141,8 @@ const Header = () => {
                       alt="image"
                     />
                   </a>
-                </li>
-                <li className="inline-block">
+                </li> */}
+                {/* <li className="inline-block">
                   <a className="text-[#333]" href="#">
                     <img
                       className="svg"
@@ -142,7 +150,7 @@ const Header = () => {
                       alt="image"
                     />
                   </a>
-                </li>
+                </li> */}
               </ul>
             </div>
             <div className="copyright w-full float-left">
