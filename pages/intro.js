@@ -2,6 +2,8 @@ import Cursor from "@/src/layout/Cursor";
 import Preloader from "@/src/layout/Preloader";
 import Link from "next/link";
 import { Fragment } from "react";
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+
 const Intro = () => {
   return (
     <Fragment>
@@ -73,4 +75,13 @@ const Intro = () => {
     </Fragment>
   );
 };
+export async function getServerSideProps(context) {
+  console.log(context.locale);
+  return {
+    props: {
+      ...await serverSideTranslations(context.locale, ['common']), // 'common' is the namespace; add more if needed
+    },
+  };
+}
+
 export default Intro;

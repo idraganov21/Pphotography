@@ -1,8 +1,9 @@
 import CavaniState from "@/src/Context";
 import CavaniHead from "@/src/layout/CavaniHead";
 import "@/styles/globals.css";
+import { appWithTranslation } from 'next-i18next'
 
-export default function App({ Component, pageProps }) {
+ function App({ Component, pageProps }) {
   return (
     <CavaniState>
       <CavaniHead />
@@ -10,3 +11,5 @@ export default function App({ Component, pageProps }) {
     </CavaniState>
   );
 }
+
+export default appWithTranslation(App);

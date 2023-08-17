@@ -1,47 +1,15 @@
-import { buildStyles, CircularProgressbar } from "react-circular-progressbar";
-import { Swiper, SwiperSlide } from "swiper/react";
-import SectionContainer from "../layout/SectionContainer";
-import ProgressBar from "./progressBar";
-import { useState } from "react";
 import { Disclosure } from "@headlessui/react";
+import { useTranslation } from "next-i18next";
+import SectionContainer from "../layout/SectionContainer";
+
 
 const About = () => {
-  const circleProgressData = [
-    { language: "English", progress: 95 },
-    { language: "Russian", progress: 80 },
-    { language: "Arabic", progress: 90 },
-  ];
+  const { t } = useTranslation();
 
-  const progressBarData = [
-    { bgcolor: "#7d7789", completed: 60, title: "HTML & CSS" },
-    { bgcolor: "#7d7789", completed: 85, title: "Javascript" },
-    { bgcolor: "#7d7789", completed: 90, title: "WordPress" },
-  ];
-
-  const services = [
-    {
-      desc: "Beautiful minimalist design and great, fast response with support. Highly recommend. Thanks Marketify!.",
-      img: "img/testimonials/1.jpg",
-      info1: "Alexander Walker",
-      info2: "Graphics Designer",
-    },
-    {
-      desc: "I had a little problem and the support was just awesome to quickly solve the situation. And keep going on.",
-      img: "img/testimonials/2.jpg",
-      info1: "Baraka Clinton",
-      info2: "Construction Engineering",
-    },
-    {
-      desc: "These people really know what they are doing! Great customer support availability and supperb kindness.",
-      img: "img/testimonials/3.jpg",
-      info1: "Armin Van Buuren",
-      info2: "Content Manager",
-    },
-  ];
 
   const descriptions = [
     {
-      title: "Сватбена фотография",
+      title: t('svatba'),
       content:
         "- Получавате всички сполучливи кадри, селектирани и обработени от мен. Предадени в онлайн галерия. Aнгажираност - 8 часа. При желание за повече часове се заплаща овъртайм по 80лв/ час -при ангажираност извън гр. Варна - 0,50лв/км",
     },
