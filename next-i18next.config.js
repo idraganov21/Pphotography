@@ -8,5 +8,6 @@ module.exports = {
   fallbackLng: {
     default: ['bg'],
   },
+  localePath: path.resolve('./public/locales')
 }
   

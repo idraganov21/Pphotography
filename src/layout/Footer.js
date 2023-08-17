@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="social">
         <ul>
           <li className="mr-[15px] inline-block">
-            <a className="text-[#333]" href="#">
+            <a className="text-[#333]" href="https://www.facebook.com/profile.php?id=100063701725113" target="_blank">
               <img
                 className="svg inline-block"
                 src="assets/img/svg/social/facebook.svg"

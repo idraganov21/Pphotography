@@ -107,7 +107,7 @@ const Header = () => {
             <div className="social w-full float-left mb-[5px]">
               <ul>
                 <li className="mr-[8px] inline-block">
-                  <a className="text-[#333]" href="#">
+                  <a className="text-[#333]" href="https://www.facebook.com/profile.php?id=100063701725113" target="_blank">
                     <img
                       className="svg"
                       src="assets/img/svg/social/facebook.svg"
