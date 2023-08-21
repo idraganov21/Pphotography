@@ -3834,7 +3834,7 @@ input.check-toggle-round-flat:checked + label:after {
 }
 
 .bg-cover {
-  background-size: cover;
+  background-size: content;
 }
 
 .bg-fixed {
