@@ -55,7 +55,7 @@ const Index = () => {
               {slides.map((index) => (
                 <div className="embla__slide" key={index}>
                   <img
-                    className="poly-image"
+                    className="embla__slide__img"
                     src={imageByIndex(index)}
                     alt="odjobo"
                   />
