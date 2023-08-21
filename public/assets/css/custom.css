@@ -495,7 +495,7 @@ body::-webkit-scrollbar-thumb {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-image: url("..//img/about/3.jpg");
+  /* background-image: url("..//img/about/3.jpg"); */
 }
 
 .cavani_tm_intro {
