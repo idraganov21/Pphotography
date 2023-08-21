@@ -216,5 +216,5 @@ img.mfp-img {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-image: url("../public/assets/img/about/3.jpg");
+  /* background-image: url("../public/assets/img/about/3.jpg"); */
 }

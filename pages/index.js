@@ -2,10 +2,12 @@ import About from "@/src/components/About";
 import Contact from "@/src/components/Contact";
 import Service from "@/src/components/Service";
 import Layout from "@/src/layout/Layout";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import { useState, useEffect, useRef } from "react";
 import dynamic from "next/dynamic";
-import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
-import { useRouter } from 'next/router';
-import { useEffect, useState } from 'react';
+import useEmblaCarousel from 'embla-carousel-react';
+import Autoplay from 'embla-carousel-autoplay';
+
 const Portfolio = dynamic(() => import("@/src/components/Portfolio"), {
   ssr: false,
 });
@@ -15,23 +17,29 @@ const Home = dynamic(() => import("@/src/components/Home"), {
 });
 
 const Index = () => {
-  const [imageUrl, setImageUrl] = useState("/assets/img/about/1.jpg"); // Default image
+  const imageUrl = "/assets/img/about/poliprofilna.webp";
+  const slides = [0, 1, 2, 3, 4]; // This represents the 4 slides you have.
+  const [showCarousel, setShowCarousel] = useState(true);
+
+  const imageByIndex = (index) => `/assets/img/about/${index + 1}.webp`;
+
+  const [emblaRef] = useEmblaCarousel({ loop: false }, [Autoplay()]);
 
   useEffect(() => {
     const checkHash = () => {
-      if (window.location.hash === '#about') {
-        setImageUrl("/assets/img/about/poliprofilna.webp");
+      if (window.location.hash === "#about") {
+        setShowCarousel(false);
       } else {
-        setImageUrl("/assets/img/about/1.jpg");
+        console.log('odjobo');
+        setShowCarousel(true);
       }
     };
 
     checkHash();
-
-    window.addEventListener('hashchange', checkHash);
+    window.addEventListener("hashchange", checkHash);
 
     return () => {
-      window.removeEventListener('hashchange', checkHash);
+      window.removeEventListener("hashchange", checkHash);
     };
   }, []);
 
@@ -39,10 +47,27 @@ const Index = () => {
     <Layout>
       <div className="cavani_tm_mainpart absolute inset-[70px] overflow-hidden middle:inset-x-0 middle:bottom-0 middle:top-[55px]">
         <div className="author_image absolute top-0 left-0 bottom-0 w-[40%] z-[15]">
-          <div
-            className="main absolute inset-0 bg-no-repeat bg-cover"
-            style={{ backgroundImage: `url(${imageUrl})` }}
-          />
+        <div className="main absolute inset-0 bg-no-repeat bg-cover">
+      {showCarousel ? (
+        <div className="embla">
+          <div className="embla__viewport" ref={emblaRef}>
+            <div className="embla__container">
+              {slides.map((index) => (
+                <div className="embla__slide" key={index}>
+                  <img
+                    className="poly-image"
+                    src={imageByIndex(index)}
+                    alt="odjobo"
+                  />
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      ) : (
+        <img src={imageUrl} alt="poly" className="poly-image" />
+      )}
+    </div>
           {/* <img src={imageUrl} className="main absolute inset-0 bg-no-repeat bg-cover" /> */}
         </div>
         <div className="main_content absolute top-0 right-0 bottom-0 w-[60%]">
@@ -74,7 +99,7 @@ export async function getServerSideProps(context) {
   console.log(context.locale);
   return {
     props: {
-      ...await serverSideTranslations(context.locale, ['common']),
+      ...(await serverSideTranslations(context.locale, ["common"])),
     },
   };
 }
