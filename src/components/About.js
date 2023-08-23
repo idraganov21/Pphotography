@@ -11,20 +11,20 @@ const About = () => {
     {
       title: t('svatba'),
       content:
-        "- Получавате всички сполучливи кадри, селектирани и обработени от мен. Предадени в онлайн галерия. Aнгажираност - 8 часа. При желание за повече часове се заплаща овъртайм по 80лв/ час -при ангажираност извън гр. Варна - 0,50лв/км",
+        t('tsvatba'),
     },
     {
-      title: "Семейна сесия",
+      title: t('fsession'),
       content:
-        "- Получавате всичи сполучливи кадри в онлайн галерия - неограничен брой/над 100 кадъра/ Селектирани и обработени от мен - 110лв. Времетраене - 60 МИН.",
+        t('tfsession'),
     },
     {
-      title: "Портретна сесия",
+      title: t('psession'),
       content:
-        "- Получавате всичи сполучливи кадри в онлайн галерия - неограничен брой/над 100 кадъра/ Селектирани и обработени от мен. ВРЕМЕТРАЕНЕ ДО 60 МИН.",
+        t('tpsession'),
     },
     {
-      title: "Заснемане на ритуал Кръщение",
+      title: t('krushtene'),
       content: "",
     },
     // Add other descriptions here
@@ -37,36 +37,19 @@ const About = () => {
           <div className="biography w-full h-auto clear-both float-left mb-[87px]">
             <div className="cavani_tm_title w-full h-auto clear-both float-left overflow-hidden">
               <span className="inline-block relative font-poppins text-[#333] uppercase font-bold tracking-[8px]">
-                About Me
+                {t('aboutme')}
               </span>
             </div>
             <div className="wrapper w-full h-auto clear-both float-left flex justify-between mt-[55px]">
               <div className="left w-[40%] w-full">
                 <p className="mb-[15px]">
-                  Здравейте ! Казвам се Полина и ако четете това , значи че сте
-                  решили заедно да разкажем вашата история в най-чистият й и
-                  съвършен вид! Значи , че ще ми позволите да вникна в във вашия
-                  живот, във вашите мечти , да погледна през вашите очи .
-                  Спомням си , че когато бях дете се възхищавах как е възможно
-                  само с натискането на едно копче да запазиш един миг във
-                  вечността, такъв какъвто е . Да запазиш спомена за хората, за
-                  тези преживявания , които да топлят сърцето ти години наред.
+                  {t('aboutftext')}
                 </p>
                 <p>
-                  Защото за мен това е фотографията, изкуство, начин да спреш
-                  времето , противно на всички теореми и закони . Да спреш
-                  времето там , където си се чувствал щастлив и да осъзнаеш как
-                  с всяка изминала година този спомен става все по-ценен и
-                  по-ценен за теб. Аз няма да ви карам да позирате , да гледате
-                  право към обектива, а напротив…
+                  {t('aboutstext')}
                 </p>
                 <p>
-                  Ще опитам да ви накарам да погледнете в себе си и в човека до
-                  вас, да бъдете такива каквито сте, щури, естествени и красиви.
-                  Толкова истински , колкото сте сутрин, когато си правите чаша
-                  кафе и вечер, когато мечтаете и се разхождате край брега.
-                  Защото както е казал Бернис Абът ,, Фотографията помага на
-                  хората да видят. “
+                  {t('aboutttext')}
                 </p>
               </div>
               {/* <div className="right w-[50%]">
@@ -107,7 +90,7 @@ const About = () => {
               <div className="service_list w-[40%]">
                 <div className="cavani_tm_title w-full h-auto clear-both float-left overflow-hidden">
                   <span className="inline-block relative font-poppins text-[#333] uppercase font-bold tracking-[8px]">
-                    Services
+                    {t('services')}
                   </span>
                 </div>
                 <div className="list w-full h-auto clear-both float-left mt-[55px]">
@@ -136,22 +119,22 @@ const About = () => {
               <div className="service_list w-[50%]">
                 <div className="cavani_tm_title w-full h-auto clear-both float-left overflow-hidden">
                   <span className="inline-block relative font-poppins text-[#333] uppercase font-bold tracking-[8px]">
-                    Prices
+                    {t('prices')}
                   </span>
                 </div>
                 <div className="list w-full h-auto clear-both float-left mt-[55px]">
                   <ul>
                     <li className="mb-[8px] w-full float-left relative pl-[25px]">
-                      100лв/час
+                      {t('100lv')}
                     </li>
                     <li className="mb-[8px] w-full float-left relative pl-[25px]">
-                      110лв/час
+                    {t('110lv')}
                     </li>
                     <li className="mb-[8px] w-full float-left relative pl-[25px]">
-                      100лв/60 мин
+                    {t('100lv')}
                     </li>
                     <li className="mb-[8px] w-full float-left relative pl-[25px]">
-                      120лв/час
+                    {t('120lv')}
                     </li>
                   </ul>
                 </div>

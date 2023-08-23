@@ -3,8 +3,10 @@ import { useContext, useEffect, useRef } from "react";
 import { CavaniContext } from "../Context";
 import SectionContainer from "../layout/SectionContainer";
 import TypingAnimation from "./AnimationText";
+import { useTranslation } from "next-i18next";
 
 const Home = () => {
+  const { t } = useTranslation();
   const { navChange } = useContext(CavaniContext);
   const isotope = useRef();
   useEffect(() => {
@@ -36,7 +38,7 @@ const Home = () => {
           <TypingAnimation />
           <div className="cavani_tm_button transition_link">
             <a href="#contact" onClick={() => navChange("contact")}>
-              Get in Touch
+              {t('getintouch')}
             </a>
           </div>
         </div>
