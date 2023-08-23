@@ -2,57 +2,56 @@ import { Fragment, useEffect, useState } from "react";
 import Modal from "react-modal";
 import SectionContainer from "../layout/SectionContainer";
 import { imgToSvg } from "../utils";
+import { useTranslation } from "next-i18next";
 
 const Service = () => {
   useEffect(() => {
     imgToSvg();
   }, []);
 
+  const { t } = useTranslation();
+
   const services = [
     {
       img: "assets/img/svg/camera.svg",
       icon: "assets/img/svg/camera.svg",
-      text: "Получавате всички сполучливи кадри, селектирани и обработени от мен. Предадени в онлайн галерия",
-      title: "Сватбена фотография",
+      text: t('svatbatitle'),
+      title: t('svatba'),
       text1:
-        "Получавате всички сполучливи кадри, селектирани и обработени от мен. Предадени в онлайн галерия",
-      text2:
-        "Aнгажираност - 8 часа.",
-      text3:
-        "При желание за повече часове се заплаща овъртайм по 80лв/ час -при ангажираност извън гр. Варна - 0,50лв/км",
+        t('tsvatba'),
     },
     {
       img: "assets/img/svg/camera2.svg",
       icon: "assets/img/svg/camera2.svg",
-      text: "Получавате всичи сполучливи кадри в онлайн галерия - неограничен брой/над 100 кадъра/",
+      text: t('svatbatitle'),
       date: "August 9, 2021",
-      title: "Семейна сесия",
+      title: t('fsession'),
       text1:
-        "Получавате всичи сполучливи кадри в онлайн галерия - неограничен брой/над 100 кадъра/ Селектирани и обработени от мен",
+        t('tfsession'),
       text2:
-        "110 лв Времетраене - 60 МИН.",
+      t('110lv'),
     },
     {
       img: "assets/img/svg/camera3.svg",
       icon: "assets/img/svg/camera3.svg",
-      text: "Получавате всичи сполучливи кадри в онлайн галерия - неограничен брой/над 100 кадъра/",
+      text: t('svatbatitle'),
       date: "August 9, 2021",
-      title: "Портретна сесия",
+      title: t('psession'),
       text1:
-        "Получавате всичи сполучливи кадри в онлайн галерия - неограничен брой/над 100 кадъра/ Селектирани и обработени от мен.",
+      t('tpsession'),
       text2:
-        "100 ЛВ./ ВРЕМЕТРАЕНЕ ДО 60 МИН.",
+      t('100lv'),
     },
     {
       img: "assets/img/svg/camera4.svg",
       icon: "assets/img/svg/camera4.svg",
-      text: "Получавате всичи сполучливи кадри в онлайн галерия - неограничен брой",
+      text: t('svatbatitle'),
       date: "August 9, 2021",
-      title: "Заснемане на ритуал Кръщение",
+      title: t('krushtene'),
       text1:
-        "Заснемане на ритуал Кръщение!",
+      t('krushtene'),
       text2:
-        "120 лв",
+      t('120lv'),
     },
   ];
 
@@ -70,7 +69,7 @@ const Service = () => {
           <div className="cavani_tm_service w-full h-auto clear-both float-left mb-[70px]">
             <div className="cavani_tm_title w-full h-auto clear-both float-left overflow-hidden">
               <span className="inline-block relative font-poppins text-[#333] uppercase font-bold tracking-[8px]">
-                Services
+                {t('services')}
               </span>
             </div>
             <div className="service_list w-full h-auto clear-both float-left mt-[60px]">
@@ -83,7 +82,7 @@ const Service = () => {
                         src={item.icon}
                         alt="image"
                       />
-                      <h3 className="title font-medium text-[24px] text-[#333] mb-[15px] transition-all duration-300">
+                      <h3 className="title font-medium text-[24px] text-[#333] mb-[15px] whitespace-nowrap	 transition-all duration-300">
                         {item.title}
                       </h3>
                       <p className="text transition-all duration-300">

@@ -1,12 +1,17 @@
+import { useTranslation } from "next-i18next";
 import SectionContainer from "../layout/SectionContainer";
+
+
 const Contact = () => {
+  const { t } = useTranslation();
+
   return (
     <SectionContainer navName="contact">
       <div className="section_inner">
         <div className="cavani_tm_contact w-full h-auto clear-both float-left mb-[100px]">
           <div className="cavani_tm_title w-full h-auto clear-both float-left overflow-hidden">
             <span className="inline-block relative font-poppins text-[#333] uppercase font-bold tracking-[8px]">
-              Get in Touch
+              {t('getintouch')}
             </span>
           </div>
           <div className="short_info w-full h-auto clear-both float-left mt-[62px]">
@@ -18,7 +23,7 @@ const Contact = () => {
                     src="assets/img/svg/location.svg"
                     alt="image"
                   />
-                  <span className="block">Varna, Bulgaria</span>
+                  <span className="block">{t('varna')}</span>
                 </div>
               </li>
               <li className="mb-[30px] w-1/3 pl-[30px]">
@@ -64,7 +69,7 @@ const Contact = () => {
                     data-success="Your message has been received, We will contact you soon."
                   />
                   <div className="empty_notice">
-                    <span>Please Fill Required Fields</span>
+                    <span>{t('req')}</span>
                   </div>
                   <div className="first w-full float-left">
                     <ul>
@@ -72,7 +77,7 @@ const Contact = () => {
                         <input
                           id="name"
                           type="text"
-                          placeholder="Name"
+                          placeholder={t('name')}
                           autoComplete="off"
                         />
                       </li>
@@ -80,7 +85,7 @@ const Contact = () => {
                         <input
                           id="email"
                           type="text"
-                          placeholder="Email"
+                          placeholder={t('email')}
                           autoComplete="off"
                         />
                       </li>
@@ -89,13 +94,13 @@ const Contact = () => {
                   <div className="last">
                     <textarea
                       id="message"
-                      placeholder="Message"
+                      placeholder= {t('message')}
                       defaultValue={""}
                     />
                   </div>
                   <div className="cavani_tm_button">
                     <a id="send_message" href="#">
-                      Send Message
+                      {t('send')}
                     </a>
                   </div>
                   {/* If you want change mail address to yours, just open "modal" folder >> contact.php and go to line 4 and change detail to yours.  */}
