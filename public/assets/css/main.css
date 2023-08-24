@@ -1455,7 +1455,7 @@ h6 {
   } */
 
   .cavani_tm_mainpart .author_image {
-    width: 35%;
+    width: 100%;
   }
 
   .cavani_tm_mainpart .main_content {
@@ -1970,6 +1970,16 @@ h6 {
 @media (max-width: 768px) {
   .cavani_tm_home .name {
     font-size: 40px;
+  }
+
+  .embla__slide__img {
+    width: 100%;
+  }
+
+  .cavani_tm_mainpart .author_image {
+    opacity: 0.45;
+    z-index: 0;
+    display: block;
   }
 
   .cavani_tm_home .\!name {
