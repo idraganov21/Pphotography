@@ -18,8 +18,9 @@ const Home = dynamic(() => import("@/src/components/Home"), {
 
 const Index = () => {
   const imageUrl = "/assets/img/about/poliprofilna.webp";
-  const slides = [0, 1, 2, 3, 4]; // This represents the 4 slides you have.
+  const slides = [0, 1, 2, 3, 4];
   const [showCarousel, setShowCarousel] = useState(true);
+  const [hideAuthorImage, setHideAuthorImage] = useState(false);
 
   const imageByIndex = (index) => `/assets/img/about/${index + 1}.webp`;
 
@@ -43,10 +44,33 @@ const Index = () => {
     };
   }, []);
 
+  useEffect(() => {
+    // Function to check and set state based on hash
+    const checkHash = () => {
+      if (window.location.hash !== '#home' && window.location.hash !== '#') {
+        console.log("bachish li");
+        setHideAuthorImage(true);
+      } else {
+        setHideAuthorImage(false);
+      }
+    };
+
+    // Initial check
+    checkHash();
+
+    // Add event listener for hash changes
+    window.addEventListener('hashchange', checkHash);
+
+    // Clean up the event listener on unmount
+    return () => {
+      window.removeEventListener('hashchange', checkHash);
+    };
+  }, []);
+
   return (
     <Layout>
       <div className="cavani_tm_mainpart absolute inset-[70px] overflow-hidden middle:inset-x-0 middle:bottom-0 middle:top-[55px]">
-        <div className="author_image absolute top-0 left-0 bottom-0 w-[40%] z-[15]">
+      <div className={`author_image absolute top-0 left-0 bottom-0 w-[40%] z-[15] ${hideAuthorImage ? 'mobile-hidden' : ''}`}>
         <div className="main absolute inset-0 bg-no-repeat bg-cover">
       {showCarousel ? (
         <div className="embla">
