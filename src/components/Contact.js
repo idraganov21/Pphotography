@@ -58,6 +58,7 @@ const Contact = () => {
           <div className="form w-full h-auto clear-both flex">
             <div className="left w-1/2 pr-[15px]">
               <div className="fields w-full h-auto clear-both float-left">
+                /* TODO: Integrate formspree with this form. Polina's email is below. */
                 <form
                   action="/"
                   method="post"
