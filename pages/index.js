@@ -47,7 +47,7 @@ const Index = () => {
   useEffect(() => {
     // Function to check and set state based on hash
     const checkHash = () => {
-      if (window.location.hash !== '#home' && window.location.hash !== '/' && window.location.hash !== '#') {
+      if (window.location.hash !== '#home' && window.location.hash !== '' && window.location.hash !== '#') {
         console.log("bachish li");
         setHideAuthorImage(true);
       } else {
