@@ -1976,6 +1976,10 @@ h6 {
     width: 100%;
   }
 
+  .mobile-hidden {
+    display: none !important;
+  }
+
   .cavani_tm_mainpart .author_image {
     opacity: 0.45;
     z-index: 0;
