@@ -106,7 +106,7 @@ const Portfolio = () => {
                     data-filter="*"
                     onClick={handleFilterKeyChange("gabriela-and-angel")}
                   >
-                    {`Gabriela & Angel`}
+                    {`Кръщене`}
                   </a>
                 </li>
                 <li className="mr-[40px] inline-block">
@@ -116,7 +116,7 @@ const Portfolio = () => {
                     data-filter=".vimeo"
                     onClick={handleFilterKeyChange("villy-and-petar")}
                   >
-                    {`Villy & Petar`}
+                    {`Сватба`}
                   </a>
                 </li>
                 <li className="inline-block">
@@ -126,7 +126,7 @@ const Portfolio = () => {
                     data-filter=".youtube"
                     onClick={handleFilterKeyChange("janet-and-martin")}
                   >
-                    {`Janet & Martin`}
+                    {`Рожден ден`}
                   </a>
                 </li>
               </ul>
