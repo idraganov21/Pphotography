@@ -28,47 +28,41 @@ const Index = () => {
 
   useEffect(() => {
     const checkHash = () => {
-      if (window.location.hash === "#about") {
+      const hash = window.location.hash;
+
+      // Show/hide Carousel based on hash
+      if (hash === "#about") {
         setShowCarousel(false);
       } else {
-        console.log('odjobo');
         setShowCarousel(true);
       }
-    };
 
-    checkHash();
-    window.addEventListener("hashchange", checkHash);
-
-    return () => {
-      window.removeEventListener("hashchange", checkHash);
-    };
-  }, []);
-
-  useEffect(() => {
-    // Function to check and set state based on hash
-    const checkHash = () => {
-      if (window.location.hash !== '#home' && window.location.hash !== '' && window.location.hash !== '#') {
+      // Show/hide Author Image based on hash
+      if (hash === '#portfolio') {
+        document.getElementById('author_image').style.display="none";
+      } else if (hash !== '#home' && hash !== '' && hash !== '#') {
+        document.getElementById('author_image').style.display = ""; // Reset inline style
         setHideAuthorImage(true);
       } else {
+        document.getElementById('author_image').style.display = ""; // Reset inline style
         setHideAuthorImage(false);
       }
     };
 
-    // Initial check
     checkHash();
 
     window.addEventListener('hashchange', checkHash);
 
-    // Clean up the event listener on unmount
     return () => {
       window.removeEventListener('hashchange', checkHash);
     };
-  }, []);
+}, []);
+
 
   return (
     <Layout>
       <div className="cavani_tm_mainpart absolute inset-[70px] overflow-hidden middle:inset-x-0 middle:bottom-0 middle:top-[55px]">
-      <div className={`author_image absolute top-0 left-0 bottom-0 w-[40%] z-[15] ${hideAuthorImage ? 'mobile-hidden' : ''}`}>
+      <div id="author_image" className={`author_image absolute top-0 left-0 bottom-0 w-[40%] z-[15] ${hideAuthorImage ? 'mobile-hidden' : ''}`}>
         <div className="main absolute inset-0 bg-no-repeat bg-cover">
       {showCarousel ? (
         <div className="embla">
@@ -100,7 +94,7 @@ const Index = () => {
           <About />
           {/* ABOUT */}
           {/* PORTFOLIO */}
-          <Portfolio />
+          {/* <Portfolio /> */}
           {/* /PORTFOLIO */}
           {/* SERVICE */}
           <Service />
@@ -111,6 +105,9 @@ const Index = () => {
           {/* CONTACT */}
           <Contact />
           {/* CONTACT */}
+        </div>
+        <div className="main_content absolute top-0 right-0 bottom-0 w-full">
+        <Portfolio />
         </div>
       </div>
     </Layout>
