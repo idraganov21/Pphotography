@@ -146,17 +146,6 @@ const Portfolio = () => {
                         src="polinaphotography/Gabriela and Angel/jtkaimqdigrujiwxr8sk"
                         alt="polinaphotography/Gabriela and Angel/jtkaimqdigrujiwxr8sk"
                       />
-                      <div className="details">
-                        <h3 className="text-[16px] mb-[2px] font-semibold">
-                          Ave Brook
-                        </h3>
-                        <span className="text-[14px]">Youtube</span>
-                      </div>
-                      <a
-                        onClick={() => setIsOpen(true)}
-                        className="cavani_tm_full_link popup-youtube"
-                        href="#"
-                      />
                     </div>
                   </div>
                 </li>
@@ -171,17 +160,6 @@ const Portfolio = () => {
                         loading="lazy"
                         src="polinaphotography/Gabriela and Angel/wiwjsr2n1qfnpjon8ejm"
                         alt="polinaphotography/Gabriela and Angel/wiwjsr2n1qfnpjon8ejm"
-                      />
-                      <div className="details">
-                        <h3 className="text-[16px] mb-[2px] font-semibold">
-                          Kelly Hookin
-                        </h3>
-                        <span className="text-[14px]">Vimeo</span>
-                      </div>
-                      <a
-                        className="cavani_tm_full_link popup-vimeo"
-                        href="#"
-                        onClick={() => setIsOpen2(true)}
                       />
                     </div>
                   </div>
@@ -198,17 +176,6 @@ const Portfolio = () => {
                         src="polinaphotography/Gabriela and Angel/tv54ty5j1uqguyhalqrr"
                         alt="polinaphotography/Gabriela and Angel/tv54ty5j1uqguyhalqrr"
                       />
-                      <div className="details">
-                        <h3 className="text-[16px] mb-[2px] font-semibold">
-                          Ashley Flores
-                        </h3>
-                        <span className="text-[14px]">Soundcloud</span>
-                      </div>
-                      <a
-                        className="cavani_tm_full_link soundcloude_link mfp-iframe audio"
-                        href="#"
-                        onClick={toggleModalThree}
-                      />
                     </div>
                   </div>
                 </li>
@@ -223,16 +190,6 @@ const Portfolio = () => {
                         loading="lazy"
                         src="polinaphotography/Gabriela and Angel/mr7kegbffjlnmbtujazo"
                         alt="polinaphotography/Gabriela and Angel/mr7kegbffjlnmbtujazo"
-                      />
-                      <div className="details">
-                        <h3 className="text-[16px] mb-[2px] font-semibold">
-                          Alla Gorova
-                        </h3>
-                        <span className="text-[14px]">Image</span>
-                      </div>
-                      <a
-                        className="cavani_tm_full_link zoom"
-                        href="assets/img/portfolio/4.jpg"
                       />
                     </div>
                   </div>
@@ -249,16 +206,6 @@ const Portfolio = () => {
                         src="polinaphotography/Gabriela and Angel/p169fhndezixyziische"
                         alt="polinaphotography/Gabriela and Angel/p169fhndezixyziische"
                       />
-                      <div className="details">
-                        <h3 className="text-[16px] mb-[2px] font-semibold">
-                          Fele Sweet
-                        </h3>
-                        <span className="text-[14px]">Image</span>
-                      </div>
-                      <a
-                        className="cavani_tm_full_link zoom"
-                        href="assets/img/portfolio/5.jpg"
-                      />
                     </div>
                   </div>
                 </li>
@@ -273,16 +220,6 @@ const Portfolio = () => {
                         loading="lazy"
                         src="polinaphotography/Gabriela and Angel/vbabphkv8qshas9vrgz3"
                         alt="polinaphotography/Gabriela and Angel/vbabphkv8qshas9vrgz3"
-                      />
-                      <div className="details">
-                        <h3 className="text-[16px] mb-[2px] font-semibold">
-                          Fele Sweet
-                        </h3>
-                        <span className="text-[14px]">Image</span>
-                      </div>
-                      <a
-                        className="cavani_tm_full_link zoom"
-                        href="assets/img/portfolio/5.jpg"
                       />
                     </div>
                   </div>
@@ -299,16 +236,6 @@ const Portfolio = () => {
                         src="polinaphotography/Gabriela and Angel/sgd1xvdrjj9jmntkxxow"
                         alt="polinaphotography/Gabriela and Angel/sgd1xvdrjj9jmntkxxow"
                       />
-                      <div className="details">
-                        <h3 className="text-[16px] mb-[2px] font-semibold">
-                          Fele Sweet
-                        </h3>
-                        <span className="text-[14px]">Image</span>
-                      </div>
-                      <a
-                        className="cavani_tm_full_link zoom"
-                        href="assets/img/portfolio/5.jpg"
-                      />
                     </div>
                   </div>
                 </li>
@@ -323,17 +250,6 @@ const Portfolio = () => {
                         loading="lazy"
                         src="polinaphotography/Gabriela and Angel/uwvybbouwtww7vxw4e4v"
                         alt="polinaphotography/Gabriela and Angel/uwvybbouwtww7vxw4e4v"
-                      />
-                      <div className="details">
-                        <h3 className="text-[16px] mb-[2px] font-semibold">
-                          Alice Moon
-                        </h3>
-                        <span className="text-[14px]">Detail</span>
-                      </div>
-                      <a
-                        className="cavani_tm_full_link portfolio_popup"
-                        href="#"
-                        onClick={toggleModalFour}
                       />
                     </div>
                     {/* <div className="hidden_content hidden opacity-0 invisible absolute z-[-111]">
@@ -484,17 +400,6 @@ const Portfolio = () => {
                         src="polinaphotography/janet-and-martin/v1wq9hujt0wdwchfrxn7"
                         alt="polinaphotography/janet-and-martin/v1wq9hujt0wdwchfrxn7"
                       />
-                      <div className="details">
-                        <h3 className="text-[16px] mb-[2px] font-semibold">
-                          Ave Brook
-                        </h3>
-                        <span className="text-[14px]">Youtube</span>
-                      </div>
-                      <a
-                        onClick={() => setIsOpen(true)}
-                        className="cavani_tm_full_link popup-youtube"
-                        href="#"
-                      />
                     </div>
                   </div>
                 </li>
@@ -509,17 +414,6 @@ const Portfolio = () => {
                         loading="lazy"
                         src="polinaphotography/janet-and-martin/ntvkejy7ismukrxxye0g"
                         alt="polinaphotography/janet-and-martin/ntvkejy7ismukrxxye0g"
-                      />
-                      <div className="details">
-                        <h3 className="text-[16px] mb-[2px] font-semibold">
-                          Ave Brook
-                        </h3>
-                        <span className="text-[14px]">Youtube</span>
-                      </div>
-                      <a
-                        onClick={() => setIsOpen(true)}
-                        className="cavani_tm_full_link popup-youtube"
-                        href="#"
                       />
                     </div>
                   </div>
@@ -536,17 +430,6 @@ const Portfolio = () => {
                         src="polinaphotography/janet-and-martin/uggggtymlse5gu1iavr8"
                         alt="polinaphotography/janet-and-martin/uggggtymlse5gu1iavr8"
                       />
-                      <div className="details">
-                        <h3 className="text-[16px] mb-[2px] font-semibold">
-                          Ave Brook
-                        </h3>
-                        <span className="text-[14px]">Youtube</span>
-                      </div>
-                      <a
-                        onClick={() => setIsOpen(true)}
-                        className="cavani_tm_full_link popup-youtube"
-                        href="#"
-                      />
                     </div>
                   </div>
                 </li>
@@ -561,17 +444,6 @@ const Portfolio = () => {
                         loading="lazy"
                         src="polinaphotography/janet-and-martin/osiwj11uhw7ajap1gtjs"
                         alt="polinaphotography/janet-and-martin/osiwj11uhw7ajap1gtjs"
-                      />
-                      <div className="details">
-                        <h3 className="text-[16px] mb-[2px] font-semibold">
-                          Ave Brook
-                        </h3>
-                        <span className="text-[14px]">Youtube</span>
-                      </div>
-                      <a
-                        onClick={() => setIsOpen(true)}
-                        className="cavani_tm_full_link popup-youtube"
-                        href="#"
                       />
                     </div>
                   </div>
@@ -588,17 +460,6 @@ const Portfolio = () => {
                         src="polinaphotography/janet-and-martin/i1xjgmsezws0fak32gku"
                         alt="polinaphotography/janet-and-martin/i1xjgmsezws0fak32gku"
                       />
-                      <div className="details">
-                        <h3 className="text-[16px] mb-[2px] font-semibold">
-                          Ave Brook
-                        </h3>
-                        <span className="text-[14px]">Youtube</span>
-                      </div>
-                      <a
-                        onClick={() => setIsOpen(true)}
-                        className="cavani_tm_full_link popup-youtube"
-                        href="#"
-                      />
                     </div>
                   </div>
                 </li>
@@ -613,17 +474,6 @@ const Portfolio = () => {
                         loading="lazy"
                         src="polinaphotography/janet-and-martin/u7bdptnbo8dlreykexjk"
                         alt="polinaphotography/janet-and-martin/u7bdptnbo8dlreykexjk"
-                      />
-                      <div className="details">
-                        <h3 className="text-[16px] mb-[2px] font-semibold">
-                          Ave Brook
-                        </h3>
-                        <span className="text-[14px]">Youtube</span>
-                      </div>
-                      <a
-                        onClick={() => setIsOpen(true)}
-                        className="cavani_tm_full_link popup-youtube"
-                        href="#"
                       />
                     </div>
                   </div>
@@ -640,17 +490,6 @@ const Portfolio = () => {
                         src="polinaphotography/janet-and-martin/bd2bzh04ye9ec6bmppgm"
                         alt="polinaphotography/janet-and-martin/bd2bzh04ye9ec6bmppgm"
                       />
-                      <div className="details">
-                        <h3 className="text-[16px] mb-[2px] font-semibold">
-                          Ave Brook
-                        </h3>
-                        <span className="text-[14px]">Youtube</span>
-                      </div>
-                      <a
-                        onClick={() => setIsOpen(true)}
-                        className="cavani_tm_full_link popup-youtube"
-                        href="#"
-                      />
                     </div>
                   </div>
                 </li>
@@ -665,17 +504,6 @@ const Portfolio = () => {
                         loading="lazy"
                         src="polinaphotography/janet-and-martin/mjgkbovuyzjikki25mti"
                         alt="polinaphotography/janet-and-martin/mjgkbovuyzjikki25mti"
-                      />
-                      <div className="details">
-                        <h3 className="text-[16px] mb-[2px] font-semibold">
-                          Ave Brook
-                        </h3>
-                        <span className="text-[14px]">Youtube</span>
-                      </div>
-                      <a
-                        onClick={() => setIsOpen(true)}
-                        className="cavani_tm_full_link popup-youtube"
-                        href="#"
                       />
                     </div>
                   </div>
@@ -692,17 +520,6 @@ const Portfolio = () => {
                         src="polinaphotography/janet-and-martin/toithd7z3dwjj6jsvteo"
                         alt="polinaphotography/janet-and-martin/toithd7z3dwjj6jsvteo"
                       />
-                      <div className="details">
-                        <h3 className="text-[16px] mb-[2px] font-semibold">
-                          Ave Brook
-                        </h3>
-                        <span className="text-[14px]">Youtube</span>
-                      </div>
-                      <a
-                        onClick={() => setIsOpen(true)}
-                        className="cavani_tm_full_link popup-youtube"
-                        href="#"
-                      />
                     </div>
                   </div>
                 </li>
@@ -717,17 +534,6 @@ const Portfolio = () => {
                         loading="lazy"
                         src="polinaphotography/janet-and-martin/en4gymgxibkhhgrv3kis"
                         alt="polinaphotography/janet-and-martin/en4gymgxibkhhgrv3kis"
-                      />
-                      <div className="details">
-                        <h3 className="text-[16px] mb-[2px] font-semibold">
-                          Ave Brook
-                        </h3>
-                        <span className="text-[14px]">Youtube</span>
-                      </div>
-                      <a
-                        onClick={() => setIsOpen(true)}
-                        className="cavani_tm_full_link popup-youtube"
-                        href="#"
                       />
                     </div>
                   </div>
@@ -744,17 +550,6 @@ const Portfolio = () => {
                         src="polinaphotography/janet-and-martin/nggaqvrdrlsk4hqgcrwy"
                         alt="polinaphotography/janet-and-martin/nggaqvrdrlsk4hqgcrwy"
                       />
-                      <div className="details">
-                        <h3 className="text-[16px] mb-[2px] font-semibold">
-                          Ave Brook
-                        </h3>
-                        <span className="text-[14px]">Youtube</span>
-                      </div>
-                      <a
-                        onClick={() => setIsOpen(true)}
-                        className="cavani_tm_full_link popup-youtube"
-                        href="#"
-                      />
                     </div>
                   </div>
                 </li>
@@ -769,17 +564,6 @@ const Portfolio = () => {
                         loading="lazy"
                         src="polinaphotography/janet-and-martin/rhiqmhz67argijnhe74w"
                         alt="polinaphotography/janet-and-martin/rhiqmhz67argijnhe74w"
-                      />
-                      <div className="details">
-                        <h3 className="text-[16px] mb-[2px] font-semibold">
-                          Ave Brook
-                        </h3>
-                        <span className="text-[14px]">Youtube</span>
-                      </div>
-                      <a
-                        onClick={() => setIsOpen(true)}
-                        className="cavani_tm_full_link popup-youtube"
-                        href="#"
                       />
                     </div>
                   </div>
@@ -796,17 +580,6 @@ const Portfolio = () => {
                         src="polinaphotography/janet-and-martin/ue7jsnbe2j56ywubunxk"
                         alt="polinaphotography/janet-and-martin/ue7jsnbe2j56ywubunxk"
                       />
-                      <div className="details">
-                        <h3 className="text-[16px] mb-[2px] font-semibold">
-                          Ave Brook
-                        </h3>
-                        <span className="text-[14px]">Youtube</span>
-                      </div>
-                      <a
-                        onClick={() => setIsOpen(true)}
-                        className="cavani_tm_full_link popup-youtube"
-                        href="#"
-                      />
                     </div>
                   </div>
                 </li>
@@ -821,17 +594,6 @@ const Portfolio = () => {
                         loading="lazy"
                         src="polinaphotography/janet-and-martin/hjyedy4jam3pfzyivwd6"
                         alt="polinaphotography/janet-and-martin/hjyedy4jam3pfzyivwd6"
-                      />
-                      <div className="details">
-                        <h3 className="text-[16px] mb-[2px] font-semibold">
-                          Ave Brook
-                        </h3>
-                        <span className="text-[14px]">Youtube</span>
-                      </div>
-                      <a
-                        onClick={() => setIsOpen(true)}
-                        className="cavani_tm_full_link popup-youtube"
-                        href="#"
                       />
                     </div>
                   </div>
@@ -848,17 +610,6 @@ const Portfolio = () => {
                         src="polinaphotography/janet-and-martin/hnun1us86pf2trac45t8"
                         alt="polinaphotography/janet-and-martin/hnun1us86pf2trac45t8"
                       />
-                      <div className="details">
-                        <h3 className="text-[16px] mb-[2px] font-semibold">
-                          Ave Brook
-                        </h3>
-                        <span className="text-[14px]">Youtube</span>
-                      </div>
-                      <a
-                        onClick={() => setIsOpen(true)}
-                        className="cavani_tm_full_link popup-youtube"
-                        href="#"
-                      />
                     </div>
                   </div>
                 </li>
@@ -873,17 +624,6 @@ const Portfolio = () => {
                         loading="lazy"
                         src="polinaphotography/janet-and-martin/z6ebknutul5mrzn381lf"
                         alt="polinaphotography/janet-and-martin/z6ebknutul5mrzn381lf"
-                      />
-                      <div className="details">
-                        <h3 className="text-[16px] mb-[2px] font-semibold">
-                          Ave Brook
-                        </h3>
-                        <span className="text-[14px]">Youtube</span>
-                      </div>
-                      <a
-                        onClick={() => setIsOpen(true)}
-                        className="cavani_tm_full_link popup-youtube"
-                        href="#"
                       />
                     </div>
                   </div>
@@ -900,17 +640,6 @@ const Portfolio = () => {
                         src="polinaphotography/janet-and-martin/x7nlhcopsqtn5dfe9roe"
                         alt="polinaphotography/janet-and-martin/x7nlhcopsqtn5dfe9roe"
                       />
-                      <div className="details">
-                        <h3 className="text-[16px] mb-[2px] font-semibold">
-                          Ave Brook
-                        </h3>
-                        <span className="text-[14px]">Youtube</span>
-                      </div>
-                      <a
-                        onClick={() => setIsOpen(true)}
-                        className="cavani_tm_full_link popup-youtube"
-                        href="#"
-                      />
                     </div>
                   </div>
                 </li>
@@ -925,17 +654,6 @@ const Portfolio = () => {
                         loading="lazy"
                         src="polinaphotography/janet-and-martin/z15gzhzs8saaeaj20122"
                         alt="polinaphotography/janet-and-martin/z15gzhzs8saaeaj20122"
-                      />
-                      <div className="details">
-                        <h3 className="text-[16px] mb-[2px] font-semibold">
-                          Alice Moon
-                        </h3>
-                        <span className="text-[14px]">Detail</span>
-                      </div>
-                      <a
-                        className="cavani_tm_full_link portfolio_popup"
-                        href="#"
-                        onClick={toggleModalFour}
                       />
                     </div>
                     {/* <div className="hidden_content hidden opacity-0 invisible absolute z-[-111]">
