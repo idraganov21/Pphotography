@@ -101,7 +101,7 @@ const Portfolio = () => {
               <ul>
                 <li className="mr-[40px] inline-block">
                   <a
-                    href="#"
+                    href="#portfolio"
                     className="current text-[#333] font-poppins font-medium transition-all duration-300"
                     data-filter="*"
                     onClick={handleFilterKeyChange("gabriela-and-angel")}
@@ -111,7 +111,7 @@ const Portfolio = () => {
                 </li>
                 <li className="mr-[40px] inline-block">
                   <a
-                    href="#"
+                    href="#portfolio"
                     className="text-[#333] font-poppins font-medium transition-all duration-300"
                     data-filter=".vimeo"
                     onClick={handleFilterKeyChange("villy-and-petar")}
@@ -121,7 +121,7 @@ const Portfolio = () => {
                 </li>
                 <li className="inline-block">
                   <a
-                    href="#"
+                    href="#portfolio"
                     className="text-[#333] font-poppins font-medium transition-all duration-300"
                     data-filter=".youtube"
                     onClick={handleFilterKeyChange("janet-and-martin")}
