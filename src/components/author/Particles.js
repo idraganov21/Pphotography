@@ -4,7 +4,6 @@ const Particles = () => {
   useEffect(() => {
     const particlesJS = window.particlesJS;
     particlesJS.load("particles-js", "particlesConfig.json", function () {
-      console.log("hi");
     });
   }, []);
   return (
