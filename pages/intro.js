@@ -76,7 +76,6 @@ const Intro = () => {
   );
 };
 export async function getServerSideProps(context) {
-  console.log(context.locale);
   return {
     props: {
       ...await serverSideTranslations(context.locale, ['common']), // 'common' is the namespace; add more if needed
