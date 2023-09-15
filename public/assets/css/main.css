@@ -745,6 +745,33 @@ h6 {
   color: rgb(51 51 51 / var(--tw-text-opacity));
 }
 
+.cavani_tm_button button {
+  display: inline-block;
+  border-width: 2px;
+  border-style: solid;
+  --tw-border-opacity: 1;
+  border-color: rgb(51 51 51 / var(--tw-border-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgb(51 51 51 / var(--tw-bg-opacity));
+  padding-left: 38px;
+  padding-right: 38px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  font-family: Poppins, sans-serif;
+  font-weight: 500;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+}
+
+.cavani_tm_button button:hover {
+  background-color: transparent;
+  --tw-text-opacity: 1;
+  color: rgb(51 51 51 / var(--tw-text-opacity));
+}
+
 .cd-headline.clip .cd-words-wrapper::after {
   top: 50%;
   height: 70%;
@@ -1454,9 +1481,9 @@ h6 {
     max-width: 95px;
   } */
 
-  .cavani_tm_mainpart .author_image {
+  /* .cavani_tm_mainpart .author_image {
     width: 100%;
-  }
+  } */
 
   .cavani_tm_mainpart .main_content {
     width: 65%;

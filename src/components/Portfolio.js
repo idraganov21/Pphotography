@@ -48,7 +48,7 @@ const Portfolio = ({ portfolioImages }) => {
 
   return (
     <>
-q      <SectionContainer navName="portfolio">
+      <SectionContainer navName="portfolio">
         <div className="section_inner">
           <div className="cavani_tm_portfolio w-full h-auto clear-both float-left mb-[70px]">
             <div className="cavani_tm_title w-full h-auto clear-both float-left overflow-hidden">
@@ -76,7 +76,7 @@ q      <SectionContainer navName="portfolio">
                     {t("familyphotosessions")}
                   </a>
                 </li>
-                <li className="inline-block">
+                <li className="mr-[40px] inline-block">
                   <a
                     href="#portfolio"
                     className="text-[#333] font-poppins font-medium transition-all duration-300"
@@ -85,7 +85,8 @@ q      <SectionContainer navName="portfolio">
                     {t("holybaptism")}
                   </a>
                 </li>
-                <li className="inline-block">
+
+                <li className="mr-[40px] inline-block">
                   <a
                     href="#portfolio"
                     className="text-[#333] font-poppins font-medium transition-all duration-300"
