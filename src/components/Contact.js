@@ -1,9 +1,44 @@
 import { useTranslation } from "next-i18next";
+import React, { useState } from "react";
 import SectionContainer from "../layout/SectionContainer";
-
 
 const Contact = () => {
   const { t } = useTranslation();
+
+  const [showHint, setShowHint] = useState(false);
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+
+    // fetch the form data
+    fetch("https://formspree.io/f/xzblvrln", {
+      method: "POST",
+      body: new FormData(event.target),
+    })
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error("Network response was not ok");
+        }
+        return response.json();
+      })
+      .then((data) => {
+        console.log(data);
+      })
+      .catch((error) => {
+        console.log(
+          "There was a problem with the fetch operation:",
+          error.message
+        );
+      });
+
+    // Clear the form
+    event.target.reset();
+
+    setShowHint(true);
+
+    // The hint will be displayed only for 5 secs
+    setTimeout(() => setShowHint(false), 5000);
+  };
 
   return (
     <SectionContainer navName="contact">
@@ -11,7 +46,7 @@ const Contact = () => {
         <div className="cavani_tm_contact w-full h-auto clear-both float-left mb-[100px]">
           <div className="cavani_tm_title w-full h-auto clear-both float-left overflow-hidden">
             <span className="inline-block relative font-poppins text-[#333] uppercase font-bold tracking-[8px]">
-              {t('getintouch')}
+              {t("getintouch")}
             </span>
           </div>
           <div className="short_info w-full h-auto clear-both float-left mt-[62px]">
@@ -23,7 +58,7 @@ const Contact = () => {
                     src="assets/img/svg/location.svg"
                     alt="image"
                   />
-                  <span className="block">{t('varna')}</span>
+                  <span className="block">{t("varna")}</span>
                 </div>
               </li>
               <li className="mb-[30px] w-1/3 pl-[30px]">
@@ -58,10 +93,11 @@ const Contact = () => {
           <div className="form w-full h-auto clear-both flex">
             <div className="left w-1/2 pr-[15px]">
               <div className="fields w-full h-auto clear-both float-left">
-                /* TODO: Integrate formspree with this form. Polina's email is below. */
+                {showHint && (
+                  <div className="hint">Your message has been sent!</div>
+                )}
                 <form
-                  action="/"
-                  method="post"
+                  onSubmit={handleSubmit}
                   className="contact_form"
                   id="contact_form"
                 >
@@ -70,23 +106,25 @@ const Contact = () => {
                     data-success="Your message has been received, We will contact you soon."
                   />
                   <div className="empty_notice">
-                    <span>{t('req')}</span>
+                    <span>{t("req")}</span>
                   </div>
                   <div className="first w-full float-left">
                     <ul>
                       <li className="w-full mb-[30px] float-left">
                         <input
+                          name="name"
                           id="name"
                           type="text"
-                          placeholder={t('name')}
+                          placeholder={t("name")}
                           autoComplete="off"
                         />
                       </li>
                       <li className="w-full mb-[30px] float-left">
                         <input
+                          name="email"
                           id="email"
-                          type="text"
-                          placeholder={t('email')}
+                          type="email"
+                          placeholder={t("email")}
                           autoComplete="off"
                         />
                       </li>
@@ -94,17 +132,16 @@ const Contact = () => {
                   </div>
                   <div className="last">
                     <textarea
+                      name="message"
                       id="message"
-                      placeholder= {t('message')}
-                      defaultValue={""}
-                    />
+                      placeholder={t("message")}
+                    ></textarea>
                   </div>
                   <div className="cavani_tm_button">
-                    <a id="send_message" href="#">
-                      {t('send')}
-                    </a>
+                    <button id="send_message" type="submit">
+                      {t("send")}
+                    </button>
                   </div>
-                  {/* If you want change mail address to yours, just open "modal" folder >> contact.php and go to line 4 and change detail to yours.  */}
                 </form>
               </div>
             </div>
