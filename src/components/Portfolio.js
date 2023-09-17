@@ -4,47 +4,65 @@ import SectionContainer from "../layout/SectionContainer";
 import { dataImage } from "../utils";
 import { useTranslation } from "next-i18next";
 import ImageCategory from "./ImageCategory/ImageCategory";
+import useSWR from "swr";
 
-const Portfolio = ({ portfolioImages }) => {
+const fetcher = (url) => fetch(url).then((res) => res.json());
+
+const Portfolio = () => {
   // Isotope
-  const isotope = useRef();
+  // const isotope = useRef();
 
   const [filterKey, setFilterKey] = useState("weddings"); // Used to filter out concrete items from <li> elements (pictures) using isotope.
 
   const { t } = useTranslation();
 
-  const portfolioImagesData = JSON.parse(portfolioImages);
+  //Set up SWR to run the fetcher function when calling "/api/staticdata"
+  //TODO: Use error to render a new html content for failed fetched static data
+  const { data, error } = useSWR("/api/staticdata", fetcher);
 
-  useEffect(() => {
-    const data = document.querySelector(".item__");
+  let portfolioImagesData = {
+    weddings: {},
+    family_photosessions: {},
+    holy_baptism: {},
+    proms: {},
+  };
 
-    if (data.length !== 0) {
-      setTimeout(() => {
-        // Initiliazing Isotope class. It will target the ul (parent) element (gallery zoom).
-        // The itemSelector selects class style to specify the li element to filter (.item__).
-        isotope.current = new Isotope(".gallery_zoom", {
-          itemSelector: ".item__",
-        });
-      }, 3000);
-    }
-  }, []);
+  if (data) {
+    portfolioImagesData = JSON.parse(data);
+  }
 
-  useEffect(() => {
-    if (isotope.current) {
-      // Filter out the specific album
-      isotope.current.arrange({ filter: `.${filterKey}` });
-    }
-  }, [filterKey]);
+  // useEffect(() => {
+  //   const item = document.querySelector(".item__");
+
+  //   console.log("item", item)
+
+  //   if (item.length !== 0) {
+  //     setTimeout(() => {
+  //       // Initiliazing Isotope class. It will target the ul (parent) element (gallery zoom).
+  //       // The itemSelector selects class style to specify the li element to filter (.item__).
+  //       isotope.current = new Isotope(".gallery_zoom", {
+  //         itemSelector: ".item__",
+  //       });
+  //     }, 3000);
+  //   }
+  // }, []);
+
+  // useEffect(() => {
+  //   if (isotope.current) {
+  //     // Filter out the specific album
+  //     isotope.current.arrange({ filter: `.${filterKey}` });
+  //   }
+  // }, [filterKey]);
 
   const handleFilterKeyChange = (key) => () => {
     setFilterKey(key);
   };
 
-  useEffect(() => {
-    setTimeout(() => {
-      dataImage();
-    }, 2000);
-  });
+  // useEffect(() => {
+  //   setTimeout(() => {
+  //     dataImage();
+  //   }, 2000);
+  // });
 
   return (
     <>

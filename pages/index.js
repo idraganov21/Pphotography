@@ -3,13 +3,10 @@ import Contact from "@/src/components/Contact";
 import Service from "@/src/components/Service";
 import Layout from "@/src/layout/Layout";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect } from "react";
 import dynamic from "next/dynamic";
 import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
-import useSWR from "swr";
-
-const fetcher = (url) => fetch(url).then((res) => res.json());
 
 const Portfolio = dynamic(() => import("@/src/components/Portfolio"), {
   ssr: false,
@@ -61,9 +58,6 @@ const Index = () => {
     };
   }, []);
 
-  //Set up SWR to run the fetcher function when calling "/api/staticdata"
-  const { data, error } = useSWR("/api/staticdata", fetcher);
-
   return (
     <Layout>
       <div className="cavani_tm_mainpart absolute inset-[70px] overflow-hidden middle:inset-x-0 middle:bottom-0 middle:top-[55px]">
@@ -103,8 +97,7 @@ const Index = () => {
           <Contact />
         </div>
         <div className="main_content absolute top-0 right-0 bottom-0 w-full">
-          {/** TODO: Create a Fallback page (error page) when json is failed to fetch. */}
-          <Portfolio portfolioImages={data} />
+          <Portfolio />
         </div>
       </div>
     </Layout>
