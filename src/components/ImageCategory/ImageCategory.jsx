@@ -11,8 +11,8 @@ const ImageCategory = ({ images, filterKey }) => {
           <div className="list_inner w-full h-auto clear-both float-left relative overflow-hidden">
             <div className="image relative">
               <CldImage
-                width="640"
-                height="960"
+                width="960"
+                height="640"
                 crop="fill"
                 gravity="auto"
                 loading="lazy"
