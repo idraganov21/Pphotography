@@ -154,7 +154,7 @@ const Header = () => {
               </ul>
             </div>
             <div className="copyright w-full float-left">
-              <p className="text-[#333] font-poppins">Copyright © 2023</p>
+              <p className="text-[#333] font-poppins">Copyright © 2024</p>
             </div>
           </div>
         </div>
